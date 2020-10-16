@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/mysite")
-def hello():
-    return "Hello, world!"
+@app.route("/", methods=["GET","POST"])
+def home():
+    print(request.form.get("account"))
+    return render_template("form.html")
