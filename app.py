@@ -4,7 +4,7 @@ import psycopg2
 
 app = Flask(__name__)
 transactions = []
-POSTGRESQL_URI = "postgres://talumxbu:9VKKaz9m3bqB0IKpOCM44_G9rzOkQ5dI@lallah.db.elephantsql.com:5432/talumxbu"
+POSTGRESQL_URI = ""
 
 connection = psycopg2.connect(POSTGRESQL_URI)
 
